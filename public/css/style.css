@@ -1,0 +1,241 @@
+/* ====== Global ====== */
+body {
+    font-family: 'Circular Std', 'Segoe UI', Roboto, sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #222;
+    text-align: center;
+}
+
+/* ====== Forms (Register + Edit) ====== */
+.container-form,
+.edit-form {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-top: 2rem;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.08);
+}
+
+.container-form label,
+.edit-form label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #444;
+}
+
+.container-form input,
+.container-form textarea,
+.edit-form input,
+.edit-form textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 12px 14px;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.container-form input:focus,
+.container-form textarea:focus,
+.edit-form input:focus,
+.edit-form textarea:focus {
+    border-color: #ff385c;
+    box-shadow: 0px 0px 6px rgba(255,56,92,0.3);
+    outline: none;
+}
+
+.container-form button,
+.edit-form button {
+    background: #ff385c;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container-form button:hover,
+.edit-form button:hover {
+    background: #e31c5f;
+}
+
+/* ====== All Listings Page ====== */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+    background: #fff;
+    width: 27rem;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+}
+
+/* .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 12px 28px rgba(0,0,0,0.12);
+} */
+
+.card-img-top {
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+}
+
+.card-body {
+    padding: 1rem 1.25rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.3rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #222222;
+    font-weight: 600;
+}
+
+/* ====== Listing Details Page ====== */
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 90vh;
+    background: #fafafa;
+    padding: 2rem;
+}
+
+.card-container {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.08);
+}
+
+.listing-image {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.listing-details {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem;
+    font-size: 1rem;
+    color: #444;
+}
+
+.listing-details li {
+    margin-bottom: 0.8rem;
+}
+
+.listing-details .title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.listing-details .price {
+    font-size: 1.2rem;
+    color: #ff385c;
+    font-weight: 700;
+}
+
+/* ====== Buttons (Edit / Delete) ====== */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+/* Edit button */
+.edit-btn {
+    background: #ff385c;
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background: #e31c5f;
+}
+
+/* Delete button */
+.delete-btn {
+    background: #222;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background: #000;
+}
+
+/* comments */
+
+/* ...existing code... */
+
+#comment {
+    width: 80%;
+    min-height: 80px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #222;
+    background: #fafafa;
+    resize: vertical;
+    transition: border-color 0.2s;
+    display: block;
+    margin-left: 0; /* Shift textarea to the left */
+}
+
+#comment:focus {
+    border-color: #007bff;
+    outline: none;
+    background: #fff;
+}
+
+/* ...existing code... */

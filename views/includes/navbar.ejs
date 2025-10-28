@@ -1,0 +1,48 @@
+<style>
+  .btn-search{
+    background-color: #fe424d;
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom sticky-top">
+  <a class="navbar-brand" href="/listing"><i class="fa-solid fa-compass"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+     
+      <a class="nav-item nav-link" href="/listing">Explore</a>
+     
+      
+    </div>
+
+    <form class="d-flex ms-auto" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button class="btn" type="submit">Search</button>
+    </form>
+
+    <div class="navbar-nav ms-auto">
+       <a class="nav-item nav-link" href="/listing/new" method = "GET">Airbnb your home</a>
+      <% if(!currUser){%>
+      <a class="nav-item nav-link " href="/login"> <b>Login</b> <span class="sr-only"></span></a>
+      <a class="nav-item nav-link" href="/signup"><b>Signup</b></a>
+      <% } else if(currUser) { %>
+      <a class="nav-item nav-link" href="/logout" method = "GET">Logout</a>
+      <% } %>
+    </div>
+  </div>
+</nav>
+
+</body>
+</html>
