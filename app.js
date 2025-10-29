@@ -89,7 +89,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.get("/", (req, res) => res.send("App started"));
+app.get("/", (req, res) => res.redirect("/listing"));
 
 app.use("/listing", listingsRoutes);
 app.use("/listing/:id/review", reviewsRoutes);
